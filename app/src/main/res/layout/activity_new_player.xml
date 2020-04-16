@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".activities.NewPlayerActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <EditText
+            android:id="@+id/editPlayerName"
+            android:hint="Nome do Player"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nickname:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <EditText
+            android:id="@+id/editNickName"
+            android:hint="Nick do Player"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team Name:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <EditText
+            android:id="@+id/editTeamName"
+            android:hint="Equipe do Player"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Role:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <EditText
+            android:id="@+id/editRole"
+            android:hint="Role do Player"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Kills:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <EditText
+            android:id="@+id/editTotalKills"
+            android:inputType="number"
+            android:hint="Total Kills do Player"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Assists:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <EditText
+            android:id="@+id/editTotalAssists"
+            android:inputType="number"
+            android:hint="Total assitências do Player"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Deaths:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <EditText
+            android:id="@+id/editTotalDeaths"
+            android:inputType="number"
+            android:hint="Total de mortes do Player"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Matchs:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <EditText
+            android:id="@+id/editTotalMatchs"
+            android:inputType="number"
+            android:hint="Total de partidas do Player"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Victories:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+        <EditText
+            android:id="@+id/editTotalVictories"
+            android:inputType="number"
+            android:hint="Total de vitórias do Player"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+    </GridLayout>
+    <Button
+        android:text="Salvar"
+        android:onClick="savePlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
